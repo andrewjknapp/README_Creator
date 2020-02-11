@@ -1,0 +1,19 @@
+{
+  "name": "readme_creator",
+  "version": "1.0.0",
+  "description": "Create a readme file directly from the command line",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andrewjknapp/README_Creator.git"
+  },
+  "author": "Andrew Knapp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andrewjknapp/README_Creator/issues"
+  },
+  "homepage": "https://github.com/andrewjknapp/README_Creator#readme"
+}
