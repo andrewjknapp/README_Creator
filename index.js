@@ -8,6 +8,7 @@ inquirer.prompt({
       type: 'input',
       message: 'Enter your GitHub Username:',
       name: 'username'
+
 }).then(function({ username }) {
   const queryUrl = `https://api.github.com/users/${username}`;
   let email;
@@ -18,6 +19,7 @@ inquirer.prompt({
   .then(function(res) {
     email = res.data.email;
     userImage = res.data.avatar_url;
+    console.log(userImage);
   })
 
   inquirer.prompt([
