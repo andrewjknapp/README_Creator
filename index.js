@@ -1,10 +1,11 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const axios = require('axios');
+const chalk = require('chalk');
 
 inquirer.prompt({
       type: 'input',
-      message: 'Enter your GitHub Username:',
+      message: chalk.yellow('Enter your GitHub Username:'),
       name: 'username'
 
 }).then(function({ username }) {
@@ -23,44 +24,44 @@ inquirer.prompt({
   inquirer.prompt([
     {
         type: 'input',
-        message: 'Project Title:',
+        message: chalk.yellow('Project Title:'),
         name: 'title'
     },
     {
         type: 'input',
-        message: 'Description:',
+        message: chalk.yellow('Description:'),
         name: 'description'
     },
     {
         type: 'input',
-        message: 'What commands are required to install dependencies:',
+        message: chalk.yellow('What commands are required to install dependencies:'),
         name: 'installation'
     },
     {
         type: 'input',
-        message: 'What skills are needed to use this project:',
+        message: chalk.yellow('What skills are needed to use this project:'),
         name: 'usage'
     },
     {
         type: 'rawlist',
-        message: 'Licence:',
+        message: chalk.yellow('Licence:'),
         name: 'license',
         choices: [
-          'MIT',
-          'APACHE 2.0',
-          'GPL 3.0',
-          'BSD 3',
-          'none'
+          chalk.green('MIT'),
+          chalk.blue('APACHE 2.0'),
+          chalk.red('GPL 3.0'),
+          chalk.cyan('BSD 3'),
+          chalk.magenta('none')
         ]
     },
     {
       type: 'input',
-      message: 'What does the user need to know to contribute to the project:',
+      message: chalk.yellow('What does the user need to know to contribute to the project:'),
       name: 'contributing'
     },
     {
       type: 'input',
-      message: 'What command is used to test this application:',
+      message: chalk.yellow('What command is used to test this application:'),
       name: 'tests'
     }
   ]).then(response => {
