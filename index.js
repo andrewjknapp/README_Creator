@@ -87,14 +87,13 @@ inquirer.prompt({
     fileContents += `## Contributors<a name=contributors></a>\n\n${response.contributing}\n\n`;
     fileContents += `## Tests<a name="tests"></a>\n\n${response.tests}\n\n`;
     fileContents += `## Questions<a name="questions"></a>\n\n${response.questions}\n\n`;
-    fileContents += `![alt text](${userImage} "User Profile Image")`
+    fileContents += `<img src="${userImage}" alt="User Profile Image" height="100">`
     
 
       fs.writeFile('readme.md', fileContents, function(err) {
         if (err) {
           throw err;
         } else {
-          
           console.log("readme.md generated");
         }
       })
