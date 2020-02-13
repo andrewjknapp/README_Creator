@@ -1,8 +1,8 @@
-# Yoda
+# Food Finder
 
 ## Description
 
-Baby Yoda Finder
+Finding food 
 
 ## Table of Contents
 1. [Installation](#installation)
@@ -14,11 +14,11 @@ Baby Yoda Finder
 
 ## Installation<a name="installation"></a>
 
-Downlad and install
+npm install
 
 ## Usage<a name="usage"></a>
 
-To find the cuteness
+used well
 
 ## License<a name=license></a>
 
@@ -26,7 +26,7 @@ undefined
 
 ## Contributors<a name=contributors></a>
 
-My lovely Wife
+Andrew
 
 ## Tests<a name="tests"></a>
 
@@ -36,4 +36,4 @@ My lovely Wife
 
 
 
-<img src="https://avatars2.githubusercontent.com/u/16299570?v=4" alt="User Profile Image" height="100">
+<img src="https://avatars0.githubusercontent.com/u/57653839?v=4" alt="User Profile Image" height="100">

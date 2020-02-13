@@ -34,12 +34,12 @@ inquirer.prompt({
     },
     {
         type: 'input',
-        message: 'Describe the Installation Process:',
+        message: 'What commands are required to install dependencies:',
         name: 'installation'
     },
     {
         type: 'input',
-        message: 'How is this project used:',
+        message: 'What skills are needed to use this project:',
         name: 'usage'
     },
     {
@@ -48,14 +48,15 @@ inquirer.prompt({
         name: 'liscence',
         choices: [
           'MIT',
-          'Apache',
-          'GPL',
-          'pending'
+          'APACHE 2.0',
+          'GPL 3.0',
+          'BSD 3',
+          'none'
         ]
     },
     {
       type: 'input',
-      message: 'Please list contributors:',
+      message: 'What does the user need to know to contribute to the project:',
       name: 'contributing'
     },
     {
