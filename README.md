@@ -2,23 +2,23 @@
 
 ## Description
 
-Restaurant suggestor
+Restaruant Locator
 
 ## Table of Contents
-[Installation](#installation)
-[Usage](#usage)
-[License](#license)
-[Contributors](#contributors)
-[Tests](#tests)
-[Questions](#questions)
+1. [Installation](#installation)
+2. [Usage](#usage)
+3. [License](#license)
+4. [Contributors](#contributors)
+5. [Tests](#tests)
+6. [Questions](#questions)
 
 ## Installation<a name="installation"></a>
 
-No installation required
+asdf
 
 ## Usage<a name="usage"></a>
 
-Find food
+adsf
 
 ## License<a name=license></a>
 
@@ -26,14 +26,14 @@ undefined
 
 ## Contributors<a name=contributors></a>
 
-Brett
+asdf
 
 ## Tests<a name="tests"></a>
 
-asdf
+adsf
 
 ## Questions<a name="questions"></a>
 
-asdf
+adsf
 
 ![alt text](https://avatars2.githubusercontent.com/u/16299570?v=4 "User Profile Image")

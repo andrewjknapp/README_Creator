@@ -73,12 +73,12 @@ inquirer.prompt({
     fileContents += `## Description\n\n${response.description}\n\n`;
 
     fileContents += `## Table of Contents` + 
-                    `\n[Installation](#installation)` + 
-                    `\n[Usage](#usage)` + 
-                    `\n[License](#license)` + 
-                    `\n[Contributors](#contributors)` + 
-                    `\n[Tests](#tests)` + 
-                    `\n[Questions](#questions)\n\n`;
+                    `\n1. [Installation](#installation)` + 
+                    `\n2. [Usage](#usage)` + 
+                    `\n3. [License](#license)` + 
+                    `\n4. [Contributors](#contributors)` + 
+                    `\n5. [Tests](#tests)` + 
+                    `\n6. [Questions](#questions)\n\n`;
 
     fileContents += `## Installation<a name="installation"></a>\n\n${response.installation}\n\n`;
     fileContents += `## Usage<a name="usage"></a>\n\n${response.usage}\n\n`;
