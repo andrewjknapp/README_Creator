@@ -68,7 +68,25 @@ inquirer.prompt({
       name: 'questions'
     }
   ]).then(response => {
-      console.log(response);
+    let fileContents = ``;
+    fileContents += `# ${response.title}\n\n`;
+    fileContents += `## Description\n\n${response.description}\n\n`;
+    fileContents += `## Table of Contents\n\t-Installation\n\t-Usage\n\t-License\n\t-Contributors\n\t-Tests\n\t-Questions\n\n`;
+    fileContents += `## Installation\n\n${response.installation}\n\n`;
+    fileContents += `## Usage\n\n${response.usage}\n\n`;
+    fileContents += `## License\n\n${response.license}\n\n`;
+    fileContents += `## Contributors\n\n${response.contributing}\n\n`;
+    fileContents += `## Tests\n\n${response.tests}\n\n`;
+    fileContents += `## Questions\n\n${response.questions}\n\n`;
+    
+
+      fs.writeFile('readme.txt', fileContents, function(err) {
+        if (err) {
+          throw err;
+        } else {
+          console.log("readme.md generated");
+        }
+      })
   })
   
 })
