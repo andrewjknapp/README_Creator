@@ -71,13 +71,19 @@ inquirer.prompt({
     let fileContents = ``;
     fileContents += `# ${response.title}\n\n`;
     fileContents += `## Description\n\n${response.description}\n\n`;
-    fileContents += `## Table of Contents\n\t-Installation\n\t-Usage\n\t-License\n\t-Contributors\n\t-Tests\n\t-Questions\n\n`;
-    fileContents += `## Installation\n\n${response.installation}\n\n`;
-    fileContents += `## Usage\n\n${response.usage}\n\n`;
-    fileContents += `## License\n\n${response.license}\n\n`;
-    fileContents += `## Contributors\n\n${response.contributing}\n\n`;
-    fileContents += `## Tests\n\n${response.tests}\n\n`;
-    fileContents += `## Questions\n\n${response.questions}\n\n`;
+    fileContents += `## Table of Contents` + 
+                    `\n\t[Installation](#installation)` + 
+                    `\n\t[Usage](#usage)` + 
+                    `\n\t[License](#license)` + 
+                    `\n\t[Contributors](#contributors)` + 
+                    `\n\t]Tests](#tests)` + 
+                    `\n\t[Questions](#questions)\n\n`;
+    fileContents += `## Installation<a name="installation"></a>\n\n${response.installation}\n\n`;
+    fileContents += `## Usage<a name="usage"></a>\n\n${response.usage}\n\n`;
+    fileContents += `## License<a name=license></a>\n\n${response.license}\n\n`;
+    fileContents += `## Contributors<a name=contributors></a>\n\n${response.contributing}\n\n`;
+    fileContents += `## Tests<a name="tests"></a>\n\n${response.tests}\n\n`;
+    fileContents += `## Questions<a name="questions"></a>\n\n${response.questions}\n\n`;
     
 
       fs.writeFile('readme.txt', fileContents, function(err) {
