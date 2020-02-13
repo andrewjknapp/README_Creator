@@ -1,10 +1,10 @@
 # README_Creator
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/andrewjknapp/README_Creator)
+[![GitHub license](https://img.shields.io/badge/license-GPL-blue.svg)](https://github.com/andrewjknapp/README_Creator)
 
 ## Description
 
-Takes in user input from the console and generates a readme.md file
+Takes in input from user in the terminal and generates a readme.md file
 
 ## Table of Contents
 1. [Installation](#installation)
@@ -28,7 +28,7 @@ Javascript, NodeJs
 
 ## License<a name=license></a>
 
-This project can be used under the MIT License.
+This project can be used under the GPL 3.0 License.
 
 ## Contributors<a name=contributors></a>
 
@@ -44,6 +44,6 @@ npm test
 
 ## Questions<a name="questions"></a>
 
-<img src="https://avatars2.githubusercontent.com/u/16299570?v=4" alt="User Profile Image" height="100">
+<img src="https://avatars.githubusercontent.com/u/16299570?" alt="User Profile Image" height="100">
 
-If you have any questions about the repo, open an issue or contact [andrewjknapp](https://github.com/andrewjknapp) directly at null
+If you have any questions about the repo, open an issue or contact [andrewjknapp](https://github.com/andrewjknapp) directly at ajknapp2015@gmail.com

@@ -2,25 +2,22 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 const axios = require('axios');
 
-
-
 inquirer.prompt({
       type: 'input',
       message: 'Enter your GitHub Username:',
       name: 'username'
 
 }).then(function({ username }) {
-  const queryUrl = `https://api.github.com/users/${username}`;
+  const queryUrl = `https://api.github.com/users/${username}/events/public`;
   let email;
   let userImage;
-  let userProfile;
+  let userProfile = `https://github.com/${username}`;
 
   axios
   .get(queryUrl)
   .then(function(res) {
-    email = res.data.email;
-    userImage = res.data.avatar_url;
-    userProfile = res.data.html_url;
+    email = res.data[0].payload.commits[0].author.email;
+    userImage = res.data[0].actor.avatar_url;
   })
 
   inquirer.prompt([
