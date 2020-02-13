@@ -1,10 +1,10 @@
 # README_Creator
 
-[![GitHub license](https://img.shields.io/badge/license-BSD-blue.svg)](https://github.com/andrewjknapp/README_Creator)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/andrewjknapp/README_Creator)
 
 ## Description
 
-This takes in user input from the console and generates a readme.md file for the user's project
+Takes in user input from the console and generates a readme.md file
 
 ## Table of Contents
 1. [Installation](#installation)
@@ -28,11 +28,11 @@ Javascript, NodeJs
 
 ## License<a name=license></a>
 
-This project can be used under the BSD 3 License.
+This project can be used under the MIT License.
 
 ## Contributors<a name=contributors></a>
 
-git
+Git
 
 ## Tests<a name="tests"></a>
 
