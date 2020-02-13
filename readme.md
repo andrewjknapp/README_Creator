@@ -1,4 +1,5 @@
 # Readme Creator
+[![GitHub license](httpls://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/andrewjknapp/README_Creator)
 
 ## Description
 
