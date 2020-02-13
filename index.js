@@ -70,8 +70,26 @@ inquirer.prompt({
     let fileContents = ``;
     fileContents += `# ${response.title}\n\n`;
 
-    fileContents += `[![GitHub license](https://img.shields.io/badge/license-${response.license}-blue.svg)](https://github.com/${username}/${response.title})\n\n`;
-
+    if (response.license !== 'none') {
+      let license;
+      switch(response.license) {
+        case 'MIT':
+          license = 'MIT';
+          break;
+        case `APACHE 2.0`:
+          license = 'APACHE';
+          break;
+        case 'GPL 3.0':
+          license = 'GPL';
+          break;
+        case 'BSD 3':
+          license = 'BSD';
+          break;
+      }
+      fileContents += `[![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg)](https://github.com/${username}/${response.title})\n\n`;
+  
+    }
+    
     fileContents += `## Description\n\n${response.description}\n\n`;
     
     fileContents += `## Table of Contents` + 

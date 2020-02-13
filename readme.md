@@ -1,10 +1,10 @@
 # README_Creator
 
-[![GitHub license](https://img.shields.io/badge/license-APACHE 2.0-blue.svg)](https://github.com/andrewjknapp/undefined)
+[![GitHub license](https://img.shields.io/badge/license-BSD-blue.svg)](https://github.com/andrewjknapp/README_Creator)
 
 ## Description
 
-Takes in input from from user in the terminal and generates a readme.md file
+This takes in user input from the console and generates a readme.md file for the user's project
 
 ## Table of Contents
 1. [Installation](#installation)
@@ -28,11 +28,11 @@ Javascript, NodeJs
 
 ## License<a name=license></a>
 
-This project can be used under the APACHE 2.0 License.
+This project can be used under the BSD 3 License.
 
 ## Contributors<a name=contributors></a>
 
-Git
+git
 
 ## Tests<a name="tests"></a>
 
