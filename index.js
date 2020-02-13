@@ -19,7 +19,6 @@ inquirer.prompt({
   .then(function(res) {
     email = res.data.email;
     userImage = res.data.avatar_url;
-    console.log(userImage);
   })
 
   inquirer.prompt([
@@ -35,8 +34,38 @@ inquirer.prompt({
     },
     {
         type: 'input',
-        message: 'Table of Contets (separated by a ,)',
-        name: 'contents'
+        message: 'Describe the Installation Process:',
+        name: 'installation'
+    },
+    {
+        type: 'input',
+        message: 'How will this project be used:',
+        name: 'usage'
+    },
+    {
+        type: 'rawlist',
+        message: 'Licence:',
+        name: 'liscence',
+        choices: [
+          'MIT',
+          'Apache',
+          'GPL'
+        ]
+    },
+    {
+      type: 'input',
+      message: 'Please list contributors:',
+      name: 'contributing'
+    },
+    {
+      type: 'input',
+      message: 'Tests:',
+      name: 'tests'
+    },
+    {
+      type: 'input',
+      message: 'Questions:',
+      name: 'questions'
     }
   ]).then(response => {
       console.log(response);
