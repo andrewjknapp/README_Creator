@@ -71,6 +71,7 @@ inquirer.prompt({
     let fileContents = ``;
     fileContents += `# ${response.title}\n\n`;
     fileContents += `## Description\n\n${response.description}\n\n`;
+
     fileContents += `## Table of Contents` + 
                     `\n\t[Installation](#installation)` + 
                     `\n\t[Usage](#usage)` + 
@@ -78,12 +79,14 @@ inquirer.prompt({
                     `\n\t[Contributors](#contributors)` + 
                     `\n\t]Tests](#tests)` + 
                     `\n\t[Questions](#questions)\n\n`;
+
     fileContents += `## Installation<a name="installation"></a>\n\n${response.installation}\n\n`;
     fileContents += `## Usage<a name="usage"></a>\n\n${response.usage}\n\n`;
     fileContents += `## License<a name=license></a>\n\n${response.license}\n\n`;
     fileContents += `## Contributors<a name=contributors></a>\n\n${response.contributing}\n\n`;
     fileContents += `## Tests<a name="tests"></a>\n\n${response.tests}\n\n`;
     fileContents += `## Questions<a name="questions"></a>\n\n${response.questions}\n\n`;
+    fileContents += `![alt text](${userImage} "User Profile Image")`
     
 
       fs.writeFile('readme.txt', fileContents, function(err) {
