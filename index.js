@@ -13,12 +13,14 @@ inquirer.prompt({
   const queryUrl = `https://api.github.com/users/${username}`;
   let email;
   let userImage;
+  let userProfile;
 
   axios
   .get(queryUrl)
   .then(function(res) {
     email = res.data.email;
     userImage = res.data.avatar_url;
+    userProfile = res.data.html_url;
   })
 
   inquirer.prompt([
@@ -61,13 +63,8 @@ inquirer.prompt({
     },
     {
       type: 'input',
-      message: 'Tests:',
+      message: 'What command is used to test this application:',
       name: 'tests'
-    },
-    {
-      type: 'input',
-      message: 'Questions:',
-      name: 'questions'
     }
   ]).then(response => {
     let fileContents = ``;
@@ -82,20 +79,36 @@ inquirer.prompt({
                     `\n5. [Tests](#tests)` + 
                     `\n6. [Questions](#questions)\n\n`;
 
-    fileContents += `## Installation<a name="installation"></a>\n\n${response.installation}\n\n`;
+    fileContents += `## Installation<a name="installation"></a>\n\nRun the following command to install dependencies:\n\n`
+    fileContents += "```\n" + `${response.installation}\n` + "```\n\n";
+
     fileContents += `## Usage<a name="usage"></a>\n\n${response.usage}\n\n`;
-    fileContents += `## License<a name=license></a>\n\n${response.license}\n\n`;
+
+    fileContents += `## License<a name=license></a>\n\n`;
+    if(response.liscence !== 'none') {
+      fileContents += `This project can be used under the ${response.license} License.\n\n`;
+    } else {
+      fileContents += `This project is not listed with a license.\n\n`;
+    }
+
     fileContents += `## Contributors<a name=contributors></a>\n\n${response.contributing}\n\n`;
-    fileContents += `## Tests<a name="tests"></a>\n\n${response.tests}\n\n`;
-    fileContents += `## Questions<a name="questions"></a>\n\n${response.questions}\n\n`;
-    fileContents += `<img src="${userImage}" alt="User Profile Image" height="100">`
+    
+    fileContents += `## Tests<a name="tests"></a>\n\n`
+    if(response.tests !== "") {
+      fileContents += `Run the following command to run tests:\n\n`;
+      fileContents += "```\n" + `${response.tests}\n` + "```\n\n";
+    }
+
+    fileContents += `## Questions<a name="questions"></a>\n\n`;
+    fileContents += `<img src="${userImage}" alt="User Profile Image" height="100">\n\n`
+    fileContents += `If you have any questions about the repo, open an issue or contact [${username}](${userProfile}) directly at ${email}`;
     
 
       fs.writeFile('readme.md', fileContents, function(err) {
         if (err) {
           throw err;
         } else {
-          console.log("readme.md generated");
+          console.log("---------------\nreadme.md generated");
         }
       })
   })

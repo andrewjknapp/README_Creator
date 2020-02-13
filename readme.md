@@ -1,8 +1,8 @@
-# Food Finder
+# Readme Creator
 
 ## Description
 
-Finding food 
+Takes input from the console and generates a readme.md file
 
 ## Table of Contents
 1. [Installation](#installation)
@@ -14,26 +14,34 @@ Finding food
 
 ## Installation<a name="installation"></a>
 
+Run the following command to install dependencies:
+
+```
 npm install
+```
 
 ## Usage<a name="usage"></a>
 
-used well
+Git, Javascript, NodeJs
 
 ## License<a name=license></a>
 
-undefined
+This project can be used under the undefined License.
 
 ## Contributors<a name=contributors></a>
 
-Andrew
+Git
 
 ## Tests<a name="tests"></a>
 
+Run the following command to run tests:
 
+```
+npm test
+```
 
 ## Questions<a name="questions"></a>
 
+<img src="https://avatars2.githubusercontent.com/u/16299570?v=4" alt="User Profile Image" height="100">
 
-
-<img src="https://avatars0.githubusercontent.com/u/57653839?v=4" alt="User Profile Image" height="100">
+If you have any questions about the repo, open an issue or contact [andrewjknapp](https://github.com/andrewjknapp) directly at null
