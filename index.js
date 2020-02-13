@@ -39,7 +39,7 @@ inquirer.prompt({
     },
     {
         type: 'input',
-        message: 'How will this project be used:',
+        message: 'How is this project used:',
         name: 'usage'
     },
     {
@@ -49,7 +49,8 @@ inquirer.prompt({
         choices: [
           'MIT',
           'Apache',
-          'GPL'
+          'GPL',
+          'pending'
         ]
     },
     {
@@ -89,10 +90,11 @@ inquirer.prompt({
     fileContents += `![alt text](${userImage} "User Profile Image")`
     
 
-      fs.writeFile('readme.txt', fileContents, function(err) {
+      fs.writeFile('readme.md', fileContents, function(err) {
         if (err) {
           throw err;
         } else {
+          
           console.log("readme.md generated");
         }
       })

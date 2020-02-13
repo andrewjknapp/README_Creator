@@ -2,7 +2,7 @@
 
 ## Description
 
-Restaruant Locator
+adsf
 
 ## Table of Contents
 1. [Installation](#installation)
@@ -18,7 +18,7 @@ asdf
 
 ## Usage<a name="usage"></a>
 
-adsf
+asdf
 
 ## License<a name=license></a>
 
@@ -30,10 +30,12 @@ asdf
 
 ## Tests<a name="tests"></a>
 
-adsf
+asdf
 
 ## Questions<a name="questions"></a>
 
-adsf
+asdf
 
 ![alt text](https://avatars2.githubusercontent.com/u/16299570?v=4 "User Profile Image")
+
+<img src="https://avatars2.githubusercontent.com/u/16299570?v=4" alt="User Profile Image" style="height: 100px; border-radius: 12px;">
