@@ -38,4 +38,4 @@ asdf
 
 ![alt text](https://avatars2.githubusercontent.com/u/16299570?v=4 "User Profile Image")
 
-<img src="https://avatars2.githubusercontent.com/u/16299570?v=4" alt="User Profile Image" style="height: 100px; border-radius: 12px;">
+<img src="https://avatars2.githubusercontent.com/u/16299570?v=4" alt="User Profile Image" height="100">
