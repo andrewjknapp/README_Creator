@@ -6,8 +6,8 @@
 - Generate table of contents based on user input for other fields
 
 ## Table of Contents
-    - Introduction (#intro)
-    - Second (#sec)
+1. Introduction (#intro)
+2. Second (#sec)
 
 
 
