@@ -47,7 +47,7 @@ inquirer.prompt({
     {
         type: 'rawlist',
         message: 'Licence:',
-        name: 'liscence',
+        name: 'license',
         choices: [
           'MIT',
           'APACHE 2.0',
@@ -69,8 +69,11 @@ inquirer.prompt({
   ]).then(response => {
     let fileContents = ``;
     fileContents += `# ${response.title}\n\n`;
-    fileContents += `## Description\n\n${response.description}\n\n`;
 
+    fileContents += `[![GitHub license](https://img.shields.io/badge/license-${response.license}-blue.svg)](https://github.com/${username}/${response.title})\n\n`;
+
+    fileContents += `## Description\n\n${response.description}\n\n`;
+    
     fileContents += `## Table of Contents` + 
                     `\n1. [Installation](#installation)` + 
                     `\n2. [Usage](#usage)` + 
@@ -108,7 +111,7 @@ inquirer.prompt({
         if (err) {
           throw err;
         } else {
-          console.log("---------------\nreadme.md generated");
+          console.log("---------------\nreadme.md generated\n---------------");
         }
       })
   })

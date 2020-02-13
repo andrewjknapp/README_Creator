@@ -1,9 +1,10 @@
-# Readme Creator
-[![GitHub license](https://img.shields.io/badge/license-APACHE-blue.svg)](https://github.com/andrewjknapp/README_Creator)
+# README_Creator
+
+[![GitHub license](https://img.shields.io/badge/license-APACHE 2.0-blue.svg)](https://github.com/andrewjknapp/undefined)
 
 ## Description
 
-Takes input from the console and generates a readme.md file
+Takes in input from from user in the terminal and generates a readme.md file
 
 ## Table of Contents
 1. [Installation](#installation)
@@ -23,11 +24,11 @@ npm install
 
 ## Usage<a name="usage"></a>
 
-Git, Javascript, NodeJs
+Javascript, NodeJs
 
 ## License<a name=license></a>
 
-This project can be used under the undefined License.
+This project can be used under the APACHE 2.0 License.
 
 ## Contributors<a name=contributors></a>
 
