@@ -44,6 +44,6 @@ npm test
 
 ## Questions<a name="questions"></a>
 
-<img src="https://avatars.githubusercontent.com/u/16299570?" alt="User Profile Image" style="border-radius: 16px" height="100">
+<img src="https://avatars.githubusercontent.com/u/16299570?" alt="User Profile Image" height="100">
 
 If you have any questions about the repo, open an issue or contact [andrewjknapp](https://github.com/andrewjknapp) directly at ajknapp2015@gmail.com
