@@ -44,7 +44,7 @@ npm test
 
 ## Animated Demo
 
-<img src="readme_Creator.gif" alt="Demo Gif" width="300">
+<img src="readme_Creator.gif" alt="Demo Gif" width="700">
 
 ## Questions<a name="questions"></a>
 
