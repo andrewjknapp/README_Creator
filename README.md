@@ -1,10 +1,10 @@
 # README_Creator
 
-[![GitHub license](https://img.shields.io/badge/license-APACHE-blue.svg)](https://github.com/andrewjknapp/README_Creator)
+[![GitHub license](https://img.shields.io/badge/license-GPL-blue.svg)](https://github.com/andrewjknapp/README_Creator)
 
 ## Description
 
-Takes in user input and makes a readme file
+Takes in user input from console to make readme file
 
 ## Table of Contents
 1. [Installation](#installation)
@@ -28,7 +28,7 @@ Javascript, NodeJs
 
 ## License<a name=license></a>
 
-This project can be used under the APACHE 2.0 License.
+This project can be used under the GPL 3.0 License.
 
 ## Contributors<a name=contributors></a>
 
@@ -42,10 +42,12 @@ Run the following command to run tests:
 npm test
 ```
 
+## Animated Demo
+
+<img src="readme_Creator.git" alt="Demo Gif" width="300">
+
 ## Questions<a name="questions"></a>
 
 <img src="https://avatars.githubusercontent.com/u/16299570?" alt="User Profile Image" height="100">
 
 If you have any questions about the repo, open an issue or contact [andrewjknapp](https://github.com/andrewjknapp) directly at ajknapp2015@gmail.com
-
-<iframe src="https://drive.google.com/file/d/1CDVvZzv6IMrG2bHBRhB7xS8FW9XBLFDO/preview" width="640" height="480"></iframe>
