@@ -143,7 +143,7 @@ inquirer.prompt({
     }
 
     fileContents += `## Questions<a name="questions"></a>\n\n`;
-    fileContents += `<img src="${userImage}" alt="User Profile Image" height="100">\n\n`
+    fileContents += `<img src="${userImage}" alt="User Profile Image" style="border-radius: 16px" height="100">\n\n`
     fileContents += `If you have any questions about the repo, open an issue or contact [${username}](${userProfile}) directly at ${email}`;
     
 

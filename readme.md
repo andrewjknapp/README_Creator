@@ -4,7 +4,7 @@
 
 ## Description
 
-Takes in user information from the console and creates a readme.md file.
+Takes in user information from the console and generates a readme.md file.
 
 ## Table of Contents
 1. [Installation](#installation)
@@ -32,7 +32,7 @@ This project can be used under the MIT License.
 
 ## Contributors<a name=contributors></a>
 
-Git
+GitHub, Git
 
 ## Tests<a name="tests"></a>
 
@@ -44,6 +44,6 @@ npm test
 
 ## Questions<a name="questions"></a>
 
-<img src="https://avatars.githubusercontent.com/u/16299570?" alt="User Profile Image" height="100">
+<img src="https://avatars.githubusercontent.com/u/16299570?" alt="User Profile Image" style="border-radius: 16px" height="100">
 
 If you have any questions about the repo, open an issue or contact [andrewjknapp](https://github.com/andrewjknapp) directly at ajknapp2015@gmail.com
