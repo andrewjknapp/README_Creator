@@ -10,15 +10,21 @@ inquirer.prompt({
 
 }).then(function({ username }) {
   const queryUrl = `https://api.github.com/users/${username}/events/public`;
-  let email;
-  let userImage;
+  let email = "";
+  let userImage = "";
   let userProfile = `https://github.com/${username}`;
 
   axios
   .get(queryUrl)
   .then(function(res) {
-    email = res.data[0].payload.commits[0].author.email;
-    userImage = res.data[0].actor.avatar_url;
+    if (res.data[0] === undefined) {
+      email = "";
+      userImage = "";
+    } else {
+      email = res.data[0].payload.commits[0].author.email;
+      userImage = res.data[0].actor.avatar_url;
+    }
+  }).catch(function(err) {
   })
 
   inquirer.prompt([
@@ -35,6 +41,7 @@ inquirer.prompt({
     {
         type: 'input',
         message: chalk.yellow('What commands are required to install dependencies:'),
+        default: 'npm install',
         name: 'installation'
     },
     {
@@ -44,14 +51,29 @@ inquirer.prompt({
     },
     {
         type: 'rawlist',
-        message: chalk.yellow('Licence:'),
+        message: chalk.yellow('License:'),
         name: 'license',
         choices: [
-          chalk.green('MIT'),
-          chalk.blue('APACHE 2.0'),
-          chalk.red('GPL 3.0'),
-          chalk.cyan('BSD 3'),
-          chalk.magenta('none')
+          {
+            name: chalk.green('MIT'),
+            value: 'MIT'
+          },
+          {
+            name: chalk.blue('APACHE 2.0'),
+            value: 'APACHE 2.0'
+          },
+          {
+            name: chalk.red('GPL 3.0'),
+            value: "GPL 3.0"
+          },
+          {
+            name: chalk.cyan('BSD 3'),
+            value: "BSD 3"
+          },
+          {
+            name: chalk.magenta('none'),
+            value: "none"
+          }
         ]
     },
     {
@@ -62,9 +84,11 @@ inquirer.prompt({
     {
       type: 'input',
       message: chalk.yellow('What command is used to test this application:'),
+      default: 'npm test',
       name: 'tests'
     }
   ]).then(response => {
+
     let fileContents = ``;
     fileContents += `# ${response.title}\n\n`;
 
@@ -127,11 +151,40 @@ inquirer.prompt({
         if (err) {
           throw err;
         } else {
-          console.log("---------------\nreadme.md generated\n---------------");
+          console.log(rAiNbOw("---------------\nreadme.md generated\n---------------"));
         }
       })
   })
   
 })
 
-
+function rAiNbOw(str) {
+  let retStr = ``;
+  for (let i = 0; i < str.length; i++) {
+      let check = Math.floor(Math.random()*6);
+      switch(check) {
+          case 0:
+              retStr += `${chalk.red(str[i])}`;
+              break;
+          case 1:
+              retStr += `${chalk.green(str[i])}`;
+              break;
+          case 2:
+              retStr += `${chalk.yellow(str[i])}`;
+              break;
+          case 3:
+              retStr += `${chalk.blue(str[i])}`;
+              break;
+          case 4:
+              retStr += `${chalk.magenta(str[i])}`;
+              break;
+          case 5:
+              retStr += `${chalk.cyan(str[i])}`;
+              break;
+          default:
+            retStr += str[i];
+            break;       
+      }
+  }
+  return retStr;
+}

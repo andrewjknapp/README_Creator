@@ -1,10 +1,10 @@
 # README_Creator
 
-[![GitHub license](https://img.shields.io/badge/license-GPL-blue.svg)](https://github.com/andrewjknapp/README_Creator)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/andrewjknapp/README_Creator)
 
 ## Description
 
-Takes in input from user in the terminal and generates a readme.md file
+Takes in user information from the console and creates a readme.md file.
 
 ## Table of Contents
 1. [Installation](#installation)
@@ -28,7 +28,7 @@ Javascript, NodeJs
 
 ## License<a name=license></a>
 
-This project can be used under the GPL 3.0 License.
+This project can be used under the MIT License.
 
 ## Contributors<a name=contributors></a>
 
