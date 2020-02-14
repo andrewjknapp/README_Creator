@@ -12,7 +12,8 @@ Takes in user input from console to make readme file
 3. [License](#license)
 4. [Contributors](#contributors)
 5. [Tests](#tests)
-6. [Questions](#questions)
+6. [Demo](#demo)
+7. [Questions](#questions)
 
 ## Installation<a name="installation"></a>
 
@@ -42,7 +43,7 @@ Run the following command to run tests:
 npm test
 ```
 
-## Animated Demo
+## Animated Demo<a name="demo"></a>
 
 <img src="readme_Creator.gif" alt="Demo Gif" width="700">
 
