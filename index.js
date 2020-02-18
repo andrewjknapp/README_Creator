@@ -147,7 +147,7 @@ inquirer.prompt({
     fileContents += `If you have any questions about the repo, open an issue or contact [${username}](${userProfile}) directly at ${email}`;
     
 
-      fs.writeFile('README.md', fileContents, function(err) {
+      fs.writeFile('output/README.md', fileContents, function(err) {
         if (err) {
           throw err;
         } else {
